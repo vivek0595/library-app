@@ -1,0 +1,16 @@
+{
+  "name": "libraryapp",
+  "version": "1.0.0",
+  "description": "library app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vivek",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.16.4",
+    "chalk": "~2.4.1",
+    "ejs": "~2.6.1"
+  }
+}
