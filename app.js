@@ -12,19 +12,20 @@ app.set('view engine','ejs');
 booksrouter.route('/')
     .get((req,res) =>{
         res.render('books',{title:'library',
-        list:['book1','book2','book3'],
         nav:[
             {link:'/books',title:'Books'},
             {link:'/authors',title:'Authors'},
             {link:'/contacts',title:'Contacts'},
             {link:'/aboutus',title:'About Us'}
         ],
-    books:[{name:'book1',
-            author:'author1'},
-            {name:'book2',
-             author:'author2'},
-            {name:'book3',
-            author:'author3'}]});
+    books:[{name:'Wings of fire ',
+            author:'APJ Abdul Kalam'},
+            {name:'A Brief History of Time',
+             author:'Stephen Hawkins'},
+            {name:'Cosmos',
+            author:'Carl Sagan'},
+            {name:'Rich Dad Poor Dad',
+             author:'Robert Kiyosaki'}]});
     });
 booksrouter.route('/single')
     .get((req,res) =>{
